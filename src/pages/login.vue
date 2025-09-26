@@ -57,6 +57,7 @@ async function login () {
         const loginService = new LoginService();
         const response = await loginService.autenticar(username.value, password.value);
         console.log(response)
+
         if (response) {
             authService.setToken(response);
             console.log('Login bem-sucedido, token armazenado.');

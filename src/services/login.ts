@@ -9,7 +9,7 @@ export class LoginService {
                 const response = "2802551c718d7f7"
                 return response;
             }else{
-                console.log("Usuario ou senha invalida")
+                throw ("Usuario ou senha invalida")
             }
             
     }
